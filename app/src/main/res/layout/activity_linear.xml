@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://developer.android.com/guide/topics/ui/layout/linear
+
+orientation = this is for the ViewGroup(LinearLayout) vertical or horizontal
+weightSum - this is for the ViewGroup(LinearLayout)
+layout_weight - make sure you have height or with as 0dp depending on
+                the orientation. vertical(height) horizontal(width)
+
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="?attr/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_weight="4" >
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="?attr/colorSecondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="?attr/colorError" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="?attr/colorSecondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="?attr/colorError" />
+
+</LinearLayout>

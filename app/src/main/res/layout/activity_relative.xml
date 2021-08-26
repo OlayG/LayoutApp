@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://developer.android.com/guide/topics/ui/layout/relative
+layout_alignParentBottom
+layout_alignParentTop
+layout_alignParentStart
+layout_alignParentEnd
+
+layout_toEndOf
+layout_toStartOf
+
+layout_above
+layout_below
+
+layout_centerHorizontal
+layout_centerVertical
+layout_centerInParent
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_1"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:text="Button"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btn_1"
+        android:text="Button" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+
+</RelativeLayout>
